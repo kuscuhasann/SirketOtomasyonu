@@ -1,0 +1,10 @@
+C:\Users\turku\OneDrive\Belgeler\GitHub\SirketOtomasyonu\SirketOtomasyonu\bin\Debug\SirketOtomasyonu.exe.config
+C:\Users\turku\OneDrive\Belgeler\GitHub\SirketOtomasyonu\SirketOtomasyonu\bin\Debug\SirketOtomasyonu.exe
+C:\Users\turku\OneDrive\Belgeler\GitHub\SirketOtomasyonu\SirketOtomasyonu\bin\Debug\SirketOtomasyonu.pdb
+C:\Users\turku\OneDrive\Belgeler\GitHub\SirketOtomasyonu\SirketOtomasyonu\obj\Debug\SirketOtomasyonu.csprojAssemblyReference.cache
+C:\Users\turku\OneDrive\Belgeler\GitHub\SirketOtomasyonu\SirketOtomasyonu\obj\Debug\SirketOtomasyonu.Properties.Resources.resources
+C:\Users\turku\OneDrive\Belgeler\GitHub\SirketOtomasyonu\SirketOtomasyonu\obj\Debug\SirketOtomasyonu.csproj.GenerateResource.cache
+C:\Users\turku\OneDrive\Belgeler\GitHub\SirketOtomasyonu\SirketOtomasyonu\obj\Debug\SirketOtomasyonu.csproj.CoreCompileInputs.cache
+C:\Users\turku\OneDrive\Belgeler\GitHub\SirketOtomasyonu\SirketOtomasyonu\obj\Debug\SirketOtomasyonu.exe
+C:\Users\turku\OneDrive\Belgeler\GitHub\SirketOtomasyonu\SirketOtomasyonu\obj\Debug\SirketOtomasyonu.pdb
+C:\Users\turku\OneDrive\Belgeler\GitHub\SirketOtomasyonu\SirketOtomasyonu\obj\Debug\SirketOtomasyonu.FormLogin.resources

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SirketOtomasyonu
 {
-    public partial class Form1 : Form
+    public partial class FormPersonel : Form
     {
-        public Form1()
+        public FormPersonel()
         {
             InitializeComponent();
         }
