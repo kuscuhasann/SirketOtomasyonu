@@ -84,8 +84,29 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sirketOtomasyonuDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sirketOtomasyonuDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sirketOtomasyonuDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sirketOtomasyonuDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sirketOtomasyonuDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sirketOtomasyonuDataSet2.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPersonelBilgiIslem.resx">
+      <DependentUpon>FormPersonelBilgiIslem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPersonelTaskAtama.resx">
+      <DependentUpon>FormPersonelTaskAtama.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormYonetici.resx">
       <DependentUpon>FormYonetici.cs</DependentUpon>
@@ -108,6 +129,39 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="sirketOtomasyonuDataSet.xsc">
+      <DependentUpon>sirketOtomasyonuDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="sirketOtomasyonuDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sirketOtomasyonuDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sirketOtomasyonuDataSet.xss">
+      <DependentUpon>sirketOtomasyonuDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="sirketOtomasyonuDataSet1.xsc">
+      <DependentUpon>sirketOtomasyonuDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="sirketOtomasyonuDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sirketOtomasyonuDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sirketOtomasyonuDataSet1.xss">
+      <DependentUpon>sirketOtomasyonuDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="sirketOtomasyonuDataSet2.xsc">
+      <DependentUpon>sirketOtomasyonuDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="sirketOtomasyonuDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sirketOtomasyonuDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sirketOtomasyonuDataSet2.xss">
+      <DependentUpon>sirketOtomasyonuDataSet2.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
