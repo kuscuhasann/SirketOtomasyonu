@@ -16,5 +16,26 @@ namespace SirketOtomasyonu
         {
             InitializeComponent();
         }
+
+        private void btnPersonelBilgiIslem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormPersonelBilgiIslem formPersonelBilgiIslem = new FormPersonelBilgiIslem();
+            formPersonelBilgiIslem.Show();
+        }
+
+        private void btnPersonelTaskAtama_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormPersonelTaskAtama formPersonelTaskAtama = new FormPersonelTaskAtama();
+            formPersonelTaskAtama.Show();
+        }
+
+        private void btnPersonelGoruntuleme_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormPersonelGoruntuleme formPersonelGoruntuleme = new FormPersonelGoruntuleme();
+            formPersonelGoruntuleme.Show();
+        }
     }
 }

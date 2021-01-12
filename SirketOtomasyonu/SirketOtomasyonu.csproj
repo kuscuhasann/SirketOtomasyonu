@@ -58,6 +58,24 @@
     <Compile Include="FormPersonel.Designer.cs">
       <DependentUpon>FormPersonel.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormPersonelBilgiIslem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPersonelBilgiIslem.Designer.cs">
+      <DependentUpon>FormPersonelBilgiIslem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPersonelGoruntuleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPersonelGoruntuleme.Designer.cs">
+      <DependentUpon>FormPersonelGoruntuleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPersonelTaskAtama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPersonelTaskAtama.Designer.cs">
+      <DependentUpon>FormPersonelTaskAtama.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormYonetici.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +86,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormYonetici.resx">
+      <DependentUpon>FormYonetici.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
