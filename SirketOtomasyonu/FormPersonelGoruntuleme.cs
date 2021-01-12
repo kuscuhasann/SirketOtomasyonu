@@ -16,5 +16,12 @@ namespace SirketOtomasyonu
         {
             InitializeComponent();
         }
+
+        private void FormPersonelGoruntuleme_Load(object sender, EventArgs e)
+        {
+            // TODO: Bu kod satırı 'sirketOtomasyonuDataSet3.tblPersonel' tablosuna veri yükler. Bunu gerektiği şekilde taşıyabilir, veya kaldırabilirsiniz.
+            this.tblPersonelTableAdapter.Fill(this.sirketOtomasyonuDataSet3.tblPersonel);
+
+        }
     }
 }

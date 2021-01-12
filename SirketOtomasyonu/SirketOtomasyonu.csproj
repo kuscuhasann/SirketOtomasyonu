@@ -99,11 +99,19 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>sirketOtomasyonuDataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="sirketOtomasyonuDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sirketOtomasyonuDataSet3.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPersonelBilgiIslem.resx">
       <DependentUpon>FormPersonelBilgiIslem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPersonelGoruntuleme.resx">
+      <DependentUpon>FormPersonelGoruntuleme.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPersonelTaskAtama.resx">
       <DependentUpon>FormPersonelTaskAtama.cs</DependentUpon>
@@ -161,6 +169,17 @@
     </None>
     <None Include="sirketOtomasyonuDataSet2.xss">
       <DependentUpon>sirketOtomasyonuDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="sirketOtomasyonuDataSet3.xsc">
+      <DependentUpon>sirketOtomasyonuDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="sirketOtomasyonuDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sirketOtomasyonuDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sirketOtomasyonuDataSet3.xss">
+      <DependentUpon>sirketOtomasyonuDataSet3.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
