@@ -40,7 +40,7 @@ namespace SirketOtomasyonu
             deleteUser.Parameters.AddWithValue("@p1", lblKullaniciSil.Text);
             deleteUser.ExecuteNonQuery();
             connect.Close();
-            MessageBox.Show("Personel silme işlemi başarılı.");
+            MessageBox.Show("Personel silme işlemi başarılı.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
         }
 

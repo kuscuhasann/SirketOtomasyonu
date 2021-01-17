@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace SirketOtomasyonu
 {
@@ -16,6 +17,13 @@ namespace SirketOtomasyonu
         {
             InitializeComponent();
         }
+        SqlConnection connect = new SqlConnection(@"Data Source = DESKTOP-QOR4M8B; Initial Catalog = sirketOtomasyonu; Integrated Security = True");
+
+        SqlCommand  getUsersId,addToTask,getStaffId;
+        SqlDataReader read;
+        int id ,staffId;
+
+
 
         private void FormPersonelTaskAtama_Load(object sender, EventArgs e)
         {
@@ -92,5 +100,40 @@ namespace SirketOtomasyonu
             }
 
         }
+
+        private void btnGorevlendir_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(rchTaskAciklama.Text) && !string.IsNullOrEmpty(cmbPersonelIsim.Text))
+            {
+                AddToTask();
+                MessageBox.Show("Task atama işlemi başarılı.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Gerekli alanlar boş bırakılamaz.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+        void AddToTask() 
+        {
+            connect.Open();
+           
+           
+            getStaffId = new SqlCommand("select id from tblPersonel where personelAdi=@p1", connect);
+            getStaffId.Parameters.AddWithValue("@p1", cmbPersonelIsim.Text);
+            read = getStaffId.ExecuteReader();
+            if (read.Read())
+            {
+                staffId = Convert.ToInt32(read["id"]);
+                  read.Close();
+            }
+          
+            addToTask = new SqlCommand("insert into tblGorev (gorevAciklamasi,gorevDurum_ID,personel_ID) values (@p1,@p2,@p3)", connect);
+            addToTask.Parameters.AddWithValue("@p1", rchTaskAciklama.Text);
+            addToTask.Parameters.AddWithValue("@p2", 1);
+            addToTask.Parameters.AddWithValue("@p3", staffId);
+            addToTask.ExecuteNonQuery();
+            connect.Close();
+        }
+
     }
 }

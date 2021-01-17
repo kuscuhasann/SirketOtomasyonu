@@ -31,6 +31,8 @@ namespace SirketOtomasyonu
         {
             this.components = new System.ComponentModel.Container();
             this.cmbPersonelIsim = new System.Windows.Forms.ComboBox();
+            this.tblPersonelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.sirketOtomasyonuDataSet2 = new SirketOtomasyonu.sirketOtomasyonuDataSet2();
             this.rchTaskAciklama = new System.Windows.Forms.RichTextBox();
             this.btnGorevlendir = new System.Windows.Forms.Button();
             this.sirketOtomasyonuDataSet11 = new SirketOtomasyonu.sirketOtomasyonuDataSet1();
@@ -38,15 +40,13 @@ namespace SirketOtomasyonu
             this.tblKullanicilarBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sirketOtomasyonuDataSet1 = new SirketOtomasyonu.sirketOtomasyonuDataSet1();
             this.tblKullanicilarBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.sirketOtomasyonuDataSet2 = new SirketOtomasyonu.sirketOtomasyonuDataSet2();
-            this.tblPersonelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tblPersonelTableAdapter = new SirketOtomasyonu.sirketOtomasyonuDataSet2TableAdapters.tblPersonelTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.tblPersonelBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sirketOtomasyonuDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sirketOtomasyonuDataSet11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblKullanicilarBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sirketOtomasyonuDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblKullanicilarBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sirketOtomasyonuDataSet2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblPersonelBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // cmbPersonelIsim
@@ -60,6 +60,16 @@ namespace SirketOtomasyonu
             this.cmbPersonelIsim.Size = new System.Drawing.Size(175, 39);
             this.cmbPersonelIsim.TabIndex = 0;
             this.cmbPersonelIsim.ValueMember = "kullaniciAdi";
+            // 
+            // tblPersonelBindingSource
+            // 
+            this.tblPersonelBindingSource.DataMember = "tblPersonel";
+            this.tblPersonelBindingSource.DataSource = this.sirketOtomasyonuDataSet2;
+            // 
+            // sirketOtomasyonuDataSet2
+            // 
+            this.sirketOtomasyonuDataSet2.DataSetName = "sirketOtomasyonuDataSet2";
+            this.sirketOtomasyonuDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // rchTaskAciklama
             // 
@@ -79,6 +89,7 @@ namespace SirketOtomasyonu
             this.btnGorevlendir.TabIndex = 2;
             this.btnGorevlendir.Text = "Görevlendir";
             this.btnGorevlendir.UseVisualStyleBackColor = true;
+            this.btnGorevlendir.Click += new System.EventHandler(this.btnGorevlendir_Click);
             // 
             // sirketOtomasyonuDataSet11
             // 
@@ -103,16 +114,6 @@ namespace SirketOtomasyonu
             this.tblKullanicilarBindingSource1.DataMember = "tblKullanicilar";
             this.tblKullanicilarBindingSource1.DataSource = this.sirketOtomasyonuDataSet11;
             // 
-            // sirketOtomasyonuDataSet2
-            // 
-            this.sirketOtomasyonuDataSet2.DataSetName = "sirketOtomasyonuDataSet2";
-            this.sirketOtomasyonuDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblPersonelBindingSource
-            // 
-            this.tblPersonelBindingSource.DataMember = "tblPersonel";
-            this.tblPersonelBindingSource.DataSource = this.sirketOtomasyonuDataSet2;
-            // 
             // tblPersonelTableAdapter
             // 
             this.tblPersonelTableAdapter.ClearBeforeFill = true;
@@ -128,12 +129,12 @@ namespace SirketOtomasyonu
             this.Name = "FormPersonelTaskAtama";
             this.Text = "FormPersonelTaskAtama";
             this.Load += new System.EventHandler(this.FormPersonelTaskAtama_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.tblPersonelBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sirketOtomasyonuDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sirketOtomasyonuDataSet11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblKullanicilarBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sirketOtomasyonuDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblKullanicilarBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sirketOtomasyonuDataSet2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblPersonelBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
