@@ -16,7 +16,7 @@ namespace SirketOtomasyonu
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormYonetici());
+            Application.Run(new FormPersonel());
         }
     }
 }

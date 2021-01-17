@@ -42,7 +42,7 @@ namespace SirketOtomasyonu
             // btnPersonelBilgiIslem
             // 
             this.btnPersonelBilgiIslem.Image = ((System.Drawing.Image)(resources.GetObject("btnPersonelBilgiIslem.Image")));
-            this.btnPersonelBilgiIslem.Location = new System.Drawing.Point(108, 148);
+            this.btnPersonelBilgiIslem.Location = new System.Drawing.Point(127, 12);
             this.btnPersonelBilgiIslem.Name = "btnPersonelBilgiIslem";
             this.btnPersonelBilgiIslem.Size = new System.Drawing.Size(173, 139);
             this.btnPersonelBilgiIslem.TabIndex = 0;
@@ -53,7 +53,7 @@ namespace SirketOtomasyonu
             // 
             this.btnPersonelTaskAtama.BackColor = System.Drawing.Color.Transparent;
             this.btnPersonelTaskAtama.Image = ((System.Drawing.Image)(resources.GetObject("btnPersonelTaskAtama.Image")));
-            this.btnPersonelTaskAtama.Location = new System.Drawing.Point(335, 148);
+            this.btnPersonelTaskAtama.Location = new System.Drawing.Point(408, 3);
             this.btnPersonelTaskAtama.Name = "btnPersonelTaskAtama";
             this.btnPersonelTaskAtama.Size = new System.Drawing.Size(173, 139);
             this.btnPersonelTaskAtama.TabIndex = 1;
@@ -63,7 +63,7 @@ namespace SirketOtomasyonu
             // btnPersonelGoruntuleme
             // 
             this.btnPersonelGoruntuleme.Image = ((System.Drawing.Image)(resources.GetObject("btnPersonelGoruntuleme.Image")));
-            this.btnPersonelGoruntuleme.Location = new System.Drawing.Point(544, 148);
+            this.btnPersonelGoruntuleme.Location = new System.Drawing.Point(127, 201);
             this.btnPersonelGoruntuleme.Name = "btnPersonelGoruntuleme";
             this.btnPersonelGoruntuleme.Size = new System.Drawing.Size(173, 139);
             this.btnPersonelGoruntuleme.TabIndex = 2;
@@ -74,7 +74,7 @@ namespace SirketOtomasyonu
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(116, 303);
+            this.label1.Location = new System.Drawing.Point(150, 154);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(133, 20);
             this.label1.TabIndex = 3;
@@ -84,7 +84,7 @@ namespace SirketOtomasyonu
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(540, 303);
+            this.label3.Location = new System.Drawing.Point(123, 358);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(217, 20);
             this.label3.TabIndex = 5;
@@ -94,7 +94,7 @@ namespace SirketOtomasyonu
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(337, 303);
+            this.label4.Location = new System.Drawing.Point(404, 154);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(171, 20);
             this.label4.TabIndex = 7;
@@ -102,7 +102,7 @@ namespace SirketOtomasyonu
             // 
             // btnToplamMaasGetir
             // 
-            this.btnToplamMaasGetir.Location = new System.Drawing.Point(544, 391);
+            this.btnToplamMaasGetir.Location = new System.Drawing.Point(408, 352);
             this.btnToplamMaasGetir.Name = "btnToplamMaasGetir";
             this.btnToplamMaasGetir.Size = new System.Drawing.Size(213, 26);
             this.btnToplamMaasGetir.TabIndex = 8;

@@ -109,6 +109,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>sirketOtomasyonuDataSet4.xsd</DependentUpon>
     </Compile>
+    <Compile Include="sirketOtomasyonuDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sirketOtomasyonuDataSet5.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -199,6 +204,17 @@
     </None>
     <None Include="sirketOtomasyonuDataSet4.xss">
       <DependentUpon>sirketOtomasyonuDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="sirketOtomasyonuDataSet5.xsc">
+      <DependentUpon>sirketOtomasyonuDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="sirketOtomasyonuDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sirketOtomasyonuDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sirketOtomasyonuDataSet5.xss">
+      <DependentUpon>sirketOtomasyonuDataSet5.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

@@ -16,5 +16,12 @@ namespace SirketOtomasyonu
         {
             InitializeComponent();
         }
+
+        private void FormPersonel_Load(object sender, EventArgs e)
+        {
+            // TODO: Bu kod satırı 'sirketOtomasyonuDataSet5.tblGorev' tablosuna veri yükler. Bunu gerektiği şekilde taşıyabilir, veya kaldırabilirsiniz.
+            this.tblGorevTableAdapter.Fill(this.sirketOtomasyonuDataSet5.tblGorev);
+
+        }
     }
 }
