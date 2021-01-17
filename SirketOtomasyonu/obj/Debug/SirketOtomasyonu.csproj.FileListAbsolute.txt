@@ -12,3 +12,4 @@ C:\Users\turku\OneDrive\Belgeler\GitHub\SirketOtomasyonu\SirketOtomasyonu\obj\De
 C:\Users\turku\OneDrive\Belgeler\GitHub\SirketOtomasyonu\SirketOtomasyonu\obj\Debug\SirketOtomasyonu.FormPersonelBilgiIslem.resources
 C:\Users\turku\OneDrive\Belgeler\GitHub\SirketOtomasyonu\SirketOtomasyonu\obj\Debug\SirketOtomasyonu.FormPersonelTaskAtama.resources
 C:\Users\turku\OneDrive\Belgeler\GitHub\SirketOtomasyonu\SirketOtomasyonu\obj\Debug\SirketOtomasyonu.FormPersonelGoruntuleme.resources
+C:\Users\turku\OneDrive\Belgeler\GitHub\SirketOtomasyonu\SirketOtomasyonu\obj\Debug\SirketOtomasyonu.FormPersonel.resources

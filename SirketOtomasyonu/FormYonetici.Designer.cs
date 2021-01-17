@@ -36,6 +36,7 @@ namespace SirketOtomasyonu
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnToplamMaasGetir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnPersonelBilgiIslem
@@ -99,6 +100,16 @@ namespace SirketOtomasyonu
             this.label4.TabIndex = 7;
             this.label4.Text = "Personel Task İşlemleri";
             // 
+            // btnToplamMaasGetir
+            // 
+            this.btnToplamMaasGetir.Location = new System.Drawing.Point(544, 391);
+            this.btnToplamMaasGetir.Name = "btnToplamMaasGetir";
+            this.btnToplamMaasGetir.Size = new System.Drawing.Size(213, 26);
+            this.btnToplamMaasGetir.TabIndex = 8;
+            this.btnToplamMaasGetir.Text = "Şirketin Toplam Maaş Gideri";
+            this.btnToplamMaasGetir.UseVisualStyleBackColor = true;
+            this.btnToplamMaasGetir.Click += new System.EventHandler(this.btnToplamMaasGetir_Click);
+            // 
             // FormYonetici
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -106,6 +117,7 @@ namespace SirketOtomasyonu
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnToplamMaasGetir);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
@@ -127,5 +139,6 @@ namespace SirketOtomasyonu
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnToplamMaasGetir;
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace SirketOtomasyonu
 {
@@ -16,6 +17,7 @@ namespace SirketOtomasyonu
         {
             InitializeComponent();
         }
+        
 
         private void btnPersonelBilgiIslem_Click(object sender, EventArgs e)
         {
@@ -36,6 +38,12 @@ namespace SirketOtomasyonu
             this.Hide();
             FormPersonelGoruntuleme formPersonelGoruntuleme = new FormPersonelGoruntuleme();
             formPersonelGoruntuleme.Show();
+        }
+
+        private void btnToplamMaasGetir_Click(object sender, EventArgs e)
+        {
+            
+
         }
     }
 }
