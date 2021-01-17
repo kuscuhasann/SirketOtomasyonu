@@ -19,9 +19,30 @@ namespace SirketOtomasyonu
         }
         SqlConnection connect = new SqlConnection(@"Data Source = DESKTOP-QOR4M8B; Initial Catalog = sirketOtomasyonu; Integrated Security = True");
 
-        SqlCommand addUser,addStaff, getUserId,personelGuncelle;
+        SqlCommand addUser,addStaff, getUserId,personelGuncelle,personelSil,deleteUser;
 
         int idEkle, idCikar,idDepartman;
+
+        private void dgvPersonelCikart_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int secilen = dgvPersonelGuncelle.SelectedCells[0].RowIndex;
+            lblKullaniciSil.Text = dgvPersonelGuncelle.Rows[secilen].Cells[4].Value.ToString();
+            
+        }
+
+        private void btnPersonelCikart_Click(object sender, EventArgs e)
+        {
+            connect.Open();
+            personelSil = new SqlCommand("delete from tblPersonel where kullanici_ID=@p1 ", connect);
+            personelSil.Parameters.AddWithValue("@p1", lblKullaniciSil.Text);
+            personelSil.ExecuteNonQuery();
+            deleteUser = new SqlCommand("delete from tblKullanicilar where id=@p1", connect);
+            deleteUser.Parameters.AddWithValue("@p1", lblKullaniciSil.Text);
+            deleteUser.ExecuteNonQuery();
+            connect.Close();
+            MessageBox.Show("Personel silme işlemi başarılı.");
+
+        }
 
         private void btnPersonelGuncelle_Click(object sender, EventArgs e)
         {
@@ -38,10 +59,10 @@ namespace SirketOtomasyonu
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            int secilen = dgvPersonel.SelectedCells[0].RowIndex;
-            lblPersonelId.Text = dgvPersonel.Rows[secilen].Cells[0].Value.ToString();
-            txtKAdiGuncelle.Text = dgvPersonel.Rows[secilen].Cells[1].Value.ToString();
-            txtMaasGuncelle.Text = dgvPersonel.Rows[secilen].Cells[2].Value.ToString();            
+            int secilen = dgvPersonelGuncelle.SelectedCells[0].RowIndex;
+            lblPersonelId.Text = dgvPersonelGuncelle.Rows[secilen].Cells[0].Value.ToString();
+            txtKAdiGuncelle.Text = dgvPersonelGuncelle.Rows[secilen].Cells[1].Value.ToString();
+            txtMaasGuncelle.Text = dgvPersonelGuncelle.Rows[secilen].Cells[2].Value.ToString();            
         }
 
         SqlDataReader read;
