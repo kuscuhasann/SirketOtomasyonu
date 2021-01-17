@@ -19,16 +19,39 @@ namespace SirketOtomasyonu
         }
         SqlConnection connect = new SqlConnection(@"Data Source = DESKTOP-QOR4M8B; Initial Catalog = sirketOtomasyonu; Integrated Security = True");
 
-        SqlCommand addUser,addStaff, getUserId,getDepartmanId;
+        SqlCommand addUser,addStaff, getUserId,personelGuncelle;
 
         int idEkle, idCikar,idDepartman;
 
-       
+        private void btnPersonelGuncelle_Click(object sender, EventArgs e)
+        {
+            connect.Open();
+            personelGuncelle = new SqlCommand("Update tblPersonel set personelAdi=@p1,personelMaas=@p2 where id=@p3",connect);
+            personelGuncelle.Parameters.AddWithValue("@p1",txtKAdiGuncelle.Text);
+            personelGuncelle.Parameters.AddWithValue("@p2",txtMaasGuncelle.Text);
+            personelGuncelle.Parameters.AddWithValue("@p3",lblPersonelId.Text);
+            personelGuncelle.ExecuteNonQuery();
+            connect.Close();
+            MessageBox.Show("Güncelleme İşleminiz Başarıyla Gerçekleştirilmiştir","Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Information);
+
+        }
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int secilen = dgvPersonel.SelectedCells[0].RowIndex;
+            lblPersonelId.Text = dgvPersonel.Rows[secilen].Cells[0].Value.ToString();
+            txtKAdiGuncelle.Text = dgvPersonel.Rows[secilen].Cells[1].Value.ToString();
+            txtMaasGuncelle.Text = dgvPersonel.Rows[secilen].Cells[2].Value.ToString();            
+        }
 
         SqlDataReader read;
 
         private void FormPersonelBilgiIslem_Load(object sender, EventArgs e)
         {
+            // TODO: Bu kod satırı 'sirketOtomasyonuDataSet4.tblPersonel' tablosuna veri yükler. Bunu gerektiği şekilde taşıyabilir, veya kaldırabilirsiniz.
+            this.tblPersonelTableAdapter1.Fill(this.sirketOtomasyonuDataSet4.tblPersonel);
+            // TODO: Bu kod satırı 'sirketOtomasyonuDataSet2.tblPersonel' tablosuna veri yükler. Bunu gerektiği şekilde taşıyabilir, veya kaldırabilirsiniz.
+            this.tblPersonelTableAdapter.Fill(this.sirketOtomasyonuDataSet2.tblPersonel);
             // TODO: Bu kod satırı 'sirketOtomasyonuDataSet.tblDepartman' tablosuna veri yükler. Bunu gerektiği şekilde taşıyabilir, veya kaldırabilirsiniz.
             this.tblDepartmanTableAdapter.Fill(this.sirketOtomasyonuDataSet.tblDepartman);
 

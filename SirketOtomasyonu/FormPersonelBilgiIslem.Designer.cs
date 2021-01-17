@@ -44,17 +44,41 @@ namespace SirketOtomasyonu
             this.label1 = new System.Windows.Forms.Label();
             this.txtKullaniciAdi = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btnPersonelGuncelle = new System.Windows.Forms.Button();
+            this.txtMaasGuncelle = new System.Windows.Forms.TextBox();
+            this.txtKAdiGuncelle = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.dgvPersonel = new System.Windows.Forms.DataGridView();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.personelAdiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.personelMaasDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.departmanIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kullaniciIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tblPersonelBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.sirketOtomasyonuDataSet4 = new SirketOtomasyonu.sirketOtomasyonuDataSet4();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.sirketOtomasyonuDataSet = new SirketOtomasyonu.sirketOtomasyonuDataSet();
             this.tblDepartmanBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tblDepartmanTableAdapter = new SirketOtomasyonu.sirketOtomasyonuDataSetTableAdapters.tblDepartmanTableAdapter();
             this.tblDepartmanBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.cmbDepartman = new System.Windows.Forms.ComboBox();
+            this.sirketOtomasyonuDataSet2 = new SirketOtomasyonu.sirketOtomasyonuDataSet2();
+            this.tblPersonelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tblPersonelTableAdapter = new SirketOtomasyonu.sirketOtomasyonuDataSet2TableAdapters.tblPersonelTableAdapter();
+            this.tblPersonelTableAdapter1 = new SirketOtomasyonu.sirketOtomasyonuDataSet4TableAdapters.tblPersonelTableAdapter();
+            this.label6 = new System.Windows.Forms.Label();
+            this.lblPersonelId = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPersonel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblPersonelBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sirketOtomasyonuDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sirketOtomasyonuDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblDepartmanBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblDepartmanBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sirketOtomasyonuDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblPersonelBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -71,7 +95,6 @@ namespace SirketOtomasyonu
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.cmbDepartman);
             this.tabPage1.Controls.Add(this.txtDepartman_ID);
             this.tabPage1.Controls.Add(this.btnPersonelKaydet);
             this.tabPage1.Controls.Add(this.txtTcKimlikNo);
@@ -94,7 +117,7 @@ namespace SirketOtomasyonu
             // txtDepartman_ID
             // 
             this.txtDepartman_ID.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtDepartman_ID.Location = new System.Drawing.Point(545, 202);
+            this.txtDepartman_ID.Location = new System.Drawing.Point(297, 227);
             this.txtDepartman_ID.Name = "txtDepartman_ID";
             this.txtDepartman_ID.Size = new System.Drawing.Size(234, 38);
             this.txtDepartman_ID.TabIndex = 12;
@@ -194,6 +217,14 @@ namespace SirketOtomasyonu
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.lblPersonelId);
+            this.tabPage2.Controls.Add(this.label6);
+            this.tabPage2.Controls.Add(this.btnPersonelGuncelle);
+            this.tabPage2.Controls.Add(this.txtMaasGuncelle);
+            this.tabPage2.Controls.Add(this.txtKAdiGuncelle);
+            this.tabPage2.Controls.Add(this.label7);
+            this.tabPage2.Controls.Add(this.label10);
+            this.tabPage2.Controls.Add(this.dgvPersonel);
             this.tabPage2.Location = new System.Drawing.Point(4, 46);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -201,6 +232,112 @@ namespace SirketOtomasyonu
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Personel Güncelle";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // btnPersonelGuncelle
+            // 
+            this.btnPersonelGuncelle.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnPersonelGuncelle.Location = new System.Drawing.Point(541, 238);
+            this.btnPersonelGuncelle.Name = "btnPersonelGuncelle";
+            this.btnPersonelGuncelle.Size = new System.Drawing.Size(231, 92);
+            this.btnPersonelGuncelle.TabIndex = 18;
+            this.btnPersonelGuncelle.Text = "Personel Güncelle";
+            this.btnPersonelGuncelle.UseVisualStyleBackColor = true;
+            this.btnPersonelGuncelle.Click += new System.EventHandler(this.btnPersonelGuncelle_Click);
+            // 
+            // txtMaasGuncelle
+            // 
+            this.txtMaasGuncelle.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtMaasGuncelle.Location = new System.Drawing.Point(264, 275);
+            this.txtMaasGuncelle.Name = "txtMaasGuncelle";
+            this.txtMaasGuncelle.Size = new System.Drawing.Size(234, 38);
+            this.txtMaasGuncelle.TabIndex = 15;
+            // 
+            // txtKAdiGuncelle
+            // 
+            this.txtKAdiGuncelle.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtKAdiGuncelle.Location = new System.Drawing.Point(264, 231);
+            this.txtKAdiGuncelle.Name = "txtKAdiGuncelle";
+            this.txtKAdiGuncelle.Size = new System.Drawing.Size(234, 38);
+            this.txtKAdiGuncelle.TabIndex = 13;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label7.Location = new System.Drawing.Point(163, 281);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(95, 31);
+            this.label7.TabIndex = 9;
+            this.label7.Text = "Maaş :";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label10.Location = new System.Drawing.Point(76, 238);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(182, 31);
+            this.label10.TabIndex = 6;
+            this.label10.Text = "Personel Adı :";
+            // 
+            // dgvPersonel
+            // 
+            this.dgvPersonel.AutoGenerateColumns = false;
+            this.dgvPersonel.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvPersonel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPersonel.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn,
+            this.personelAdiDataGridViewTextBoxColumn,
+            this.personelMaasDataGridViewTextBoxColumn,
+            this.departmanIDDataGridViewTextBoxColumn,
+            this.kullaniciIDDataGridViewTextBoxColumn});
+            this.dgvPersonel.DataSource = this.tblPersonelBindingSource1;
+            this.dgvPersonel.Location = new System.Drawing.Point(6, 6);
+            this.dgvPersonel.Name = "dgvPersonel";
+            this.dgvPersonel.Size = new System.Drawing.Size(766, 146);
+            this.dgvPersonel.TabIndex = 0;
+            this.dgvPersonel.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // personelAdiDataGridViewTextBoxColumn
+            // 
+            this.personelAdiDataGridViewTextBoxColumn.DataPropertyName = "personelAdi";
+            this.personelAdiDataGridViewTextBoxColumn.HeaderText = "personelAdi";
+            this.personelAdiDataGridViewTextBoxColumn.Name = "personelAdiDataGridViewTextBoxColumn";
+            // 
+            // personelMaasDataGridViewTextBoxColumn
+            // 
+            this.personelMaasDataGridViewTextBoxColumn.DataPropertyName = "personelMaas";
+            this.personelMaasDataGridViewTextBoxColumn.HeaderText = "personelMaas";
+            this.personelMaasDataGridViewTextBoxColumn.Name = "personelMaasDataGridViewTextBoxColumn";
+            // 
+            // departmanIDDataGridViewTextBoxColumn
+            // 
+            this.departmanIDDataGridViewTextBoxColumn.DataPropertyName = "departman_ID";
+            this.departmanIDDataGridViewTextBoxColumn.HeaderText = "departman_ID";
+            this.departmanIDDataGridViewTextBoxColumn.Name = "departmanIDDataGridViewTextBoxColumn";
+            // 
+            // kullaniciIDDataGridViewTextBoxColumn
+            // 
+            this.kullaniciIDDataGridViewTextBoxColumn.DataPropertyName = "kullanici_ID";
+            this.kullaniciIDDataGridViewTextBoxColumn.HeaderText = "kullanici_ID";
+            this.kullaniciIDDataGridViewTextBoxColumn.Name = "kullaniciIDDataGridViewTextBoxColumn";
+            // 
+            // tblPersonelBindingSource1
+            // 
+            this.tblPersonelBindingSource1.DataMember = "tblPersonel";
+            this.tblPersonelBindingSource1.DataSource = this.sirketOtomasyonuDataSet4;
+            // 
+            // sirketOtomasyonuDataSet4
+            // 
+            this.sirketOtomasyonuDataSet4.DataSetName = "sirketOtomasyonuDataSet4";
+            this.sirketOtomasyonuDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tabPage3
             // 
@@ -231,14 +368,42 @@ namespace SirketOtomasyonu
             this.tblDepartmanBindingSource1.DataMember = "tblDepartman";
             this.tblDepartmanBindingSource1.DataSource = this.sirketOtomasyonuDataSet;
             // 
-            // cmbDepartman
+            // sirketOtomasyonuDataSet2
             // 
-            this.cmbDepartman.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.cmbDepartman.FormattingEnabled = true;
-            this.cmbDepartman.Location = new System.Drawing.Point(297, 226);
-            this.cmbDepartman.Name = "cmbDepartman";
-            this.cmbDepartman.Size = new System.Drawing.Size(234, 32);
-            this.cmbDepartman.TabIndex = 13;
+            this.sirketOtomasyonuDataSet2.DataSetName = "sirketOtomasyonuDataSet2";
+            this.sirketOtomasyonuDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblPersonelBindingSource
+            // 
+            this.tblPersonelBindingSource.DataMember = "tblPersonel";
+            this.tblPersonelBindingSource.DataSource = this.sirketOtomasyonuDataSet2;
+            // 
+            // tblPersonelTableAdapter
+            // 
+            this.tblPersonelTableAdapter.ClearBeforeFill = true;
+            // 
+            // tblPersonelTableAdapter1
+            // 
+            this.tblPersonelTableAdapter1.ClearBeforeFill = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label6.Location = new System.Drawing.Point(87, 191);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(171, 31);
+            this.label6.TabIndex = 19;
+            this.label6.Text = "Personel ID :";
+            // 
+            // lblPersonelId
+            // 
+            this.lblPersonelId.AutoSize = true;
+            this.lblPersonelId.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblPersonelId.Location = new System.Drawing.Point(264, 197);
+            this.lblPersonelId.Name = "lblPersonelId";
+            this.lblPersonelId.Size = new System.Drawing.Size(0, 31);
+            this.lblPersonelId.TabIndex = 20;
             // 
             // FormPersonelBilgiIslem
             // 
@@ -252,9 +417,16 @@ namespace SirketOtomasyonu
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPersonel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblPersonelBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sirketOtomasyonuDataSet4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sirketOtomasyonuDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblDepartmanBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblDepartmanBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sirketOtomasyonuDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblPersonelBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -280,6 +452,24 @@ namespace SirketOtomasyonu
         private System.Windows.Forms.Button btnPersonelKaydet;
         private System.Windows.Forms.BindingSource tblDepartmanBindingSource1;
         private System.Windows.Forms.TextBox txtDepartman_ID;
-        private System.Windows.Forms.ComboBox cmbDepartman;
+        private System.Windows.Forms.DataGridView dgvPersonel;
+        private sirketOtomasyonuDataSet2 sirketOtomasyonuDataSet2;
+        private System.Windows.Forms.BindingSource tblPersonelBindingSource;
+        private sirketOtomasyonuDataSet2TableAdapters.tblPersonelTableAdapter tblPersonelTableAdapter;
+        private sirketOtomasyonuDataSet4 sirketOtomasyonuDataSet4;
+        private System.Windows.Forms.BindingSource tblPersonelBindingSource1;
+        private sirketOtomasyonuDataSet4TableAdapters.tblPersonelTableAdapter tblPersonelTableAdapter1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn personelAdiDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn personelMaasDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn departmanIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn kullaniciIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button btnPersonelGuncelle;
+        private System.Windows.Forms.TextBox txtMaasGuncelle;
+        private System.Windows.Forms.TextBox txtKAdiGuncelle;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lblPersonelId;
+        private System.Windows.Forms.Label label6;
     }
 }
