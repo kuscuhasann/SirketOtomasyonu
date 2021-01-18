@@ -45,5 +45,12 @@ namespace SirketOtomasyonu
             
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormLogin fr = new FormLogin();
+            fr.Show();
+        }
     }
 }

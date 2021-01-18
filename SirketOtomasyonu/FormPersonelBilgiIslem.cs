@@ -23,6 +23,13 @@ namespace SirketOtomasyonu
 
         int idEkle, idCikar,idDepartman;
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormYonetici fr = new FormYonetici();
+            fr.Show();
+        }
+
         private void dgvPersonelCikart_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             int secilen = dgvPersonelGuncelle.SelectedCells[0].RowIndex;

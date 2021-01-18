@@ -23,5 +23,12 @@ namespace SirketOtomasyonu
             this.tblPersonelTableAdapter.Fill(this.sirketOtomasyonuDataSet3.tblPersonel);
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormYonetici fr = new FormYonetici();
+            fr.Show();
+        }
     }
 }

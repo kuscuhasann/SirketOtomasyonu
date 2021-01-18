@@ -30,6 +30,7 @@ namespace SirketOtomasyonu
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPersonelTaskAtama));
             this.cmbPersonelIsim = new System.Windows.Forms.ComboBox();
             this.tblPersonelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sirketOtomasyonuDataSet2 = new SirketOtomasyonu.sirketOtomasyonuDataSet2();
@@ -41,12 +42,14 @@ namespace SirketOtomasyonu
             this.sirketOtomasyonuDataSet1 = new SirketOtomasyonu.sirketOtomasyonuDataSet1();
             this.tblKullanicilarBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tblPersonelTableAdapter = new SirketOtomasyonu.sirketOtomasyonuDataSet2TableAdapters.tblPersonelTableAdapter();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.tblPersonelBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sirketOtomasyonuDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sirketOtomasyonuDataSet11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblKullanicilarBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sirketOtomasyonuDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblKullanicilarBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // cmbPersonelIsim
@@ -118,11 +121,23 @@ namespace SirketOtomasyonu
             // 
             this.tblPersonelTableAdapter.ClearBeforeFill = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(688, 345);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(112, 105);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // FormPersonelTaskAtama
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnGorevlendir);
             this.Controls.Add(this.rchTaskAciklama);
             this.Controls.Add(this.cmbPersonelIsim);
@@ -135,6 +150,7 @@ namespace SirketOtomasyonu
             ((System.ComponentModel.ISupportInitialize)(this.tblKullanicilarBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sirketOtomasyonuDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblKullanicilarBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -152,5 +168,6 @@ namespace SirketOtomasyonu
         private sirketOtomasyonuDataSet2 sirketOtomasyonuDataSet2;
         private System.Windows.Forms.BindingSource tblPersonelBindingSource;
         private sirketOtomasyonuDataSet2TableAdapters.tblPersonelTableAdapter tblPersonelTableAdapter;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

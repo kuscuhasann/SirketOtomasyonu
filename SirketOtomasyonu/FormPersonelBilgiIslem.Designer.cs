@@ -30,6 +30,7 @@ namespace SirketOtomasyonu
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPersonelBilgiIslem));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.txtDepartman_ID = new System.Windows.Forms.TextBox();
@@ -60,6 +61,7 @@ namespace SirketOtomasyonu
             this.tblPersonelBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.sirketOtomasyonuDataSet4 = new SirketOtomasyonu.sirketOtomasyonuDataSet4();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.lblKullaniciSil = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.btnPersonelCikart = new System.Windows.Forms.Button();
             this.dgvPersonelCikart = new System.Windows.Forms.DataGridView();
@@ -76,7 +78,7 @@ namespace SirketOtomasyonu
             this.tblPersonelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tblPersonelTableAdapter = new SirketOtomasyonu.sirketOtomasyonuDataSet2TableAdapters.tblPersonelTableAdapter();
             this.tblPersonelTableAdapter1 = new SirketOtomasyonu.sirketOtomasyonuDataSet4TableAdapters.tblPersonelTableAdapter();
-            this.lblKullaniciSil = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -90,6 +92,7 @@ namespace SirketOtomasyonu
             ((System.ComponentModel.ISupportInitialize)(this.tblDepartmanBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sirketOtomasyonuDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblPersonelBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -106,6 +109,7 @@ namespace SirketOtomasyonu
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.pictureBox1);
             this.tabPage1.Controls.Add(this.txtDepartman_ID);
             this.tabPage1.Controls.Add(this.btnPersonelKaydet);
             this.tabPage1.Controls.Add(this.txtTcKimlikNo);
@@ -383,6 +387,15 @@ namespace SirketOtomasyonu
             this.tabPage3.Text = "Personel Çıkart";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // lblKullaniciSil
+            // 
+            this.lblKullaniciSil.AutoSize = true;
+            this.lblKullaniciSil.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblKullaniciSil.Location = new System.Drawing.Point(177, 165);
+            this.lblKullaniciSil.Name = "lblKullaniciSil";
+            this.lblKullaniciSil.Size = new System.Drawing.Size(0, 31);
+            this.lblKullaniciSil.TabIndex = 21;
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -490,14 +503,16 @@ namespace SirketOtomasyonu
             // 
             this.tblPersonelTableAdapter1.ClearBeforeFill = true;
             // 
-            // lblKullaniciSil
+            // pictureBox1
             // 
-            this.lblKullaniciSil.AutoSize = true;
-            this.lblKullaniciSil.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblKullaniciSil.Location = new System.Drawing.Point(177, 165);
-            this.lblKullaniciSil.Name = "lblKullaniciSil";
-            this.lblKullaniciSil.Size = new System.Drawing.Size(0, 31);
-            this.lblKullaniciSil.TabIndex = 21;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(664, 293);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(112, 105);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // FormPersonelBilgiIslem
             // 
@@ -524,6 +539,7 @@ namespace SirketOtomasyonu
             ((System.ComponentModel.ISupportInitialize)(this.tblDepartmanBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sirketOtomasyonuDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblPersonelBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -577,5 +593,6 @@ namespace SirketOtomasyonu
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label lblKullaniciSil;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -37,6 +37,8 @@ namespace SirketOtomasyonu
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btnToplamMaasGetir = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnPersonelBilgiIslem
@@ -53,7 +55,7 @@ namespace SirketOtomasyonu
             // 
             this.btnPersonelTaskAtama.BackColor = System.Drawing.Color.Transparent;
             this.btnPersonelTaskAtama.Image = ((System.Drawing.Image)(resources.GetObject("btnPersonelTaskAtama.Image")));
-            this.btnPersonelTaskAtama.Location = new System.Drawing.Point(408, 3);
+            this.btnPersonelTaskAtama.Location = new System.Drawing.Point(402, 12);
             this.btnPersonelTaskAtama.Name = "btnPersonelTaskAtama";
             this.btnPersonelTaskAtama.Size = new System.Drawing.Size(173, 139);
             this.btnPersonelTaskAtama.TabIndex = 1;
@@ -102,13 +104,24 @@ namespace SirketOtomasyonu
             // 
             // btnToplamMaasGetir
             // 
-            this.btnToplamMaasGetir.Location = new System.Drawing.Point(408, 352);
+            this.btnToplamMaasGetir.Location = new System.Drawing.Point(408, 201);
             this.btnToplamMaasGetir.Name = "btnToplamMaasGetir";
-            this.btnToplamMaasGetir.Size = new System.Drawing.Size(213, 26);
+            this.btnToplamMaasGetir.Size = new System.Drawing.Size(173, 139);
             this.btnToplamMaasGetir.TabIndex = 8;
             this.btnToplamMaasGetir.Text = "Şirketin Toplam Maaş Gideri";
             this.btnToplamMaasGetir.UseVisualStyleBackColor = true;
             this.btnToplamMaasGetir.Click += new System.EventHandler(this.btnToplamMaasGetir_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(688, 345);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(112, 105);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // FormYonetici
             // 
@@ -117,6 +130,7 @@ namespace SirketOtomasyonu
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnToplamMaasGetir);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -126,6 +140,7 @@ namespace SirketOtomasyonu
             this.Controls.Add(this.btnPersonelBilgiIslem);
             this.Name = "FormYonetici";
             this.Text = "FormYonetici";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -140,5 +155,6 @@ namespace SirketOtomasyonu
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnToplamMaasGetir;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -88,6 +88,13 @@ namespace SirketOtomasyonu
 
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormYonetici fr = new FormYonetici();
+            fr.Show();
+        }
+
         private void fillBy2ToolStripButton_Click(object sender, EventArgs e)
         {
             try
