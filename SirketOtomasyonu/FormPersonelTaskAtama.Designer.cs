@@ -136,13 +136,16 @@ namespace SirketOtomasyonu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ControlBox = false;
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnGorevlendir);
             this.Controls.Add(this.rchTaskAciklama);
             this.Controls.Add(this.cmbPersonelIsim);
             this.Name = "FormPersonelTaskAtama";
-            this.Text = "FormPersonelTaskAtama";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Personel Görev Atama Ekranı";
             this.Load += new System.EventHandler(this.FormPersonelTaskAtama_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tblPersonelBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sirketOtomasyonuDataSet2)).EndInit();

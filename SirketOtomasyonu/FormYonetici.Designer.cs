@@ -127,9 +127,11 @@ namespace SirketOtomasyonu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ControlBox = false;
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnToplamMaasGetir);
             this.Controls.Add(this.label4);
@@ -139,7 +141,8 @@ namespace SirketOtomasyonu
             this.Controls.Add(this.btnPersonelTaskAtama);
             this.Controls.Add(this.btnPersonelBilgiIslem);
             this.Name = "FormYonetici";
-            this.Text = "FormYonetici";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Yönetici Paneli";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
