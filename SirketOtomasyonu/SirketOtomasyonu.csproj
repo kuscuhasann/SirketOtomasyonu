@@ -76,6 +76,12 @@
     <Compile Include="FormPersonelTaskAtama.Designer.cs">
       <DependentUpon>FormPersonelTaskAtama.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormSirketBilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSirketBilgileri.Designer.cs">
+      <DependentUpon>FormSirketBilgileri.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormYonetici.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +134,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormPersonelTaskAtama.resx">
       <DependentUpon>FormPersonelTaskAtama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSirketBilgileri.resx">
+      <DependentUpon>FormSirketBilgileri.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormYonetici.resx">
       <DependentUpon>FormYonetici.cs</DependentUpon>
