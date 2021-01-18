@@ -42,8 +42,9 @@ namespace SirketOtomasyonu
 
         private void btnToplamMaasGetir_Click(object sender, EventArgs e)
         {
-            
-
+            this.Hide();
+            FormSirketBilgileri fr = new FormSirketBilgileri();
+            fr.Show();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

@@ -108,7 +108,7 @@ namespace SirketOtomasyonu
             this.btnToplamMaasGetir.Name = "btnToplamMaasGetir";
             this.btnToplamMaasGetir.Size = new System.Drawing.Size(173, 139);
             this.btnToplamMaasGetir.TabIndex = 8;
-            this.btnToplamMaasGetir.Text = "Şirketin Toplam Maaş Gideri";
+            this.btnToplamMaasGetir.Text = "Şirket Bilgileri";
             this.btnToplamMaasGetir.UseVisualStyleBackColor = true;
             this.btnToplamMaasGetir.Click += new System.EventHandler(this.btnToplamMaasGetir_Click);
             // 
