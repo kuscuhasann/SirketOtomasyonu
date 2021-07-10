@@ -9,7 +9,7 @@ Bu repo Patika Git eğitiminde oluşturduğumuz ilk repo. İçerisinde bir adat 
 Projeyi klonladıktan sonra Visual Studio Code programını açınız.
 
 Windows için:
-```linux
+```windows
 cd kodluyoruzilkrepo
 code .
 ```
